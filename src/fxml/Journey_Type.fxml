@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="journey_root" prefHeight="337.0" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Journey_Type">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="609.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="174.0" layoutY="28.0" prefHeight="61.0" prefWidth="271.0" text="Journey Status" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Next_Button" buttonType="RAISED" layoutX="376.0" layoutY="238.0" onAction="#next_method" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #BDBDBD;" text="NEXT">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="journey_ComboBox" layoutX="205.0" layoutY="125.0" prefHeight="44.0" prefWidth="190.0" promptText="    Choose Your Option" />
+      <JFXButton fx:id="Back_Button" buttonType="RAISED" layoutX="109.0" layoutY="238.0" onAction="#back_method" prefHeight="44.0" prefWidth="112.0" style="-fx-background-color: #BDBDBD;" text="BACK">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

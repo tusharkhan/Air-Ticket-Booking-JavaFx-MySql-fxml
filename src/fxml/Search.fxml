@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="Flight_Schedle_root" prefHeight="337.0" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Search">
+    <children>
+        <ImageView fitHeight="400.0" fitWidth="613.0" layoutX="-1.0" pickOnBounds="true">
+            <image>
+                <Image url="@../img/back.jpg" />
+            </image>
+        </ImageView>
+        <ScrollPane layoutX="29.0" layoutY="63.0" prefHeight="230.0" prefWidth="543.0">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="332.0" prefWidth="542.0">
+                    <children>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="265.0" prefWidth="526.0">
+                            <children>
+                                <Label layoutX="40.0" layoutY="23.0" text="Flight Name" AnchorPane.bottomAnchor="217.0" AnchorPane.topAnchor="20.0">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                    <padding>
+                                        <Insets bottom="1.0" />
+                                    </padding>
+                                </Label>
+                                <Label layoutX="151.0" layoutY="24.0" text="Flight Number">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="273.0" layoutY="24.0" text="Date">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="348.0" layoutY="24.0" text="Time">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="434.0" layoutY="24.0" text="Status">
+                                    <font>
+                                        <Font name="System Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <Text fx:id="flightName" layoutX="46.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Air Dolomiti" wrappingWidth="85.13671875" AnchorPane.topAnchor="75.0" />
+                                <Text fx:id="number" layoutX="156.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MVK800" wrappingWidth="85.13671875" AnchorPane.topAnchor="75.0" />
+                                <Text fx:id="date" layoutX="261.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/08/2017" wrappingWidth="85.13671875" AnchorPane.topAnchor="75.0" />
+                                <Text fx:id="time" layoutX="338.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" wrappingWidth="85.13671875" AnchorPane.topAnchor="75.0" />
+                                <Text fx:id="status" layoutX="426.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN TIME" wrappingWidth="75.13671875" AnchorPane.topAnchor="75.0" />
+                                <Text fx:id="flightName1" layoutX="46.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Air Inuit" wrappingWidth="85.13671875" AnchorPane.topAnchor="115.0" />
+                                <Text fx:id="number1" layoutX="156.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FDS56" wrappingWidth="85.13671875" AnchorPane.topAnchor="115.0" />
+                                <Text fx:id="date1" layoutX="261.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/09/2017" wrappingWidth="85.13671875" AnchorPane.topAnchor="115.0" />
+                                <Text fx:id="time1" layoutX="338.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" wrappingWidth="85.13671875" AnchorPane.topAnchor="115.0" />
+                                <Text fx:id="status1" layoutX="426.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DELAY" wrappingWidth="75.13671875" AnchorPane.topAnchor="115.0" />
+                                <Text fx:id="status11" layoutX="426.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN TIME" wrappingWidth="75.13671875" AnchorPane.topAnchor="161.0" />
+                                <Text fx:id="flightName11" layoutX="46.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Air Cairo" wrappingWidth="85.13671875" AnchorPane.topAnchor="161.0" />
+                                <Text fx:id="number11" layoutX="156.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GLY56" wrappingWidth="85.13671875" AnchorPane.topAnchor="161.0" />
+                                <Text fx:id="date11" layoutX="261.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09/09/2017" wrappingWidth="85.13671875" AnchorPane.topAnchor="161.0" />
+                                <Text fx:id="time11" layoutX="338.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10:00" wrappingWidth="85.13671875" AnchorPane.topAnchor="161.0" />
+                                <Text fx:id="status111" layoutX="426.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN TIME" wrappingWidth="75.13671875" AnchorPane.topAnchor="200.0" />
+                                <Text fx:id="time111" layoutX="338.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13:30" wrappingWidth="85.13671875" AnchorPane.topAnchor="200.0" />
+                                <Text fx:id="date111" layoutX="261.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/16/2017" wrappingWidth="85.13671875" AnchorPane.topAnchor="200.0" />
+                                <Text fx:id="number111" layoutX="151.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JY876" wrappingWidth="85.13671875" AnchorPane.topAnchor="200.0" />
+                                <Text fx:id="flightName111" layoutX="38.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lufthansa" wrappingWidth="85.13671875" AnchorPane.topAnchor="200.0" />
+                                <Text fx:id="status1111" layoutX="426.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IN TIME" wrappingWidth="75.13671875" AnchorPane.topAnchor="235.0" />
+                                <Text fx:id="time1111" layoutX="338.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09:45" wrappingWidth="85.13671875" AnchorPane.topAnchor="235.0" />
+                                <Text fx:id="date1111" layoutX="261.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="08/27/2017" wrappingWidth="85.13671875" AnchorPane.topAnchor="235.0" />
+                                <Text fx:id="number1111" layoutX="151.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="466TT" wrappingWidth="85.13671875" AnchorPane.topAnchor="235.0" />
+                                <JFXButton fx:id="Edit_Button" buttonType="RAISED" layoutX="395.0" layoutY="214.0" onAction="#flight_table" prefHeight="43.0" prefWidth="110.0" style="-fx-background-color: #9E9E9E;" text="SUBMIT" AnchorPane.bottomAnchor="-52.0" AnchorPane.leftAnchor="378.0" AnchorPane.rightAnchor="46.0" AnchorPane.topAnchor="281.0">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </JFXButton>
+                                <Text fx:id="flightName1111" layoutX="38.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Aigle Azur" wrappingWidth="85.13671875" AnchorPane.topAnchor="235.0" />
+                                <JFXCheckBox layoutX="3.0" layoutY="75.0" text=" " />
+                                <JFXCheckBox fx:id="dis" disable="true" layoutX="3.0" layoutY="114.0" text=" " />
+                                <JFXCheckBox layoutX="3.0" layoutY="161.0" text=" " />
+                                <JFXCheckBox disable="true" layoutX="3.0" layoutY="200.0" text=" " />
+                                <JFXCheckBox disable="true" layoutX="3.0" layoutY="235.0" text=" " />
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </AnchorPane>
+            </content>
+        </ScrollPane>
+        <HBox layoutX="55.0" layoutY="10.0" prefHeight="52.0" prefWidth="487.0">
+            <children>
+                <TextField prefHeight="25.0" prefWidth="120.0" promptText="hr:mm">
+                    <HBox.margin>
+                        <Insets left="284.0" top="1.0" />
+                    </HBox.margin>
+                </TextField>
+                <JFXButton buttonType="RAISED" prefHeight="25.0" prefWidth="69.0" text="Search">
+                    <HBox.margin>
+                        <Insets left="9.0" top="2.0" />
+                    </HBox.margin>
+                </JFXButton>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

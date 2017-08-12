@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="update" prefHeight="327.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminUpdate">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="503.0" layoutY="272.0" onAction="#updateAirlineInfo" prefHeight="38.0" prefWidth="102.0" style="-fx-background-color: #cfd8dc;" text="UPDATE" AnchorPane.rightAnchor="33.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <ScrollPane layoutX="34.0" layoutY="24.0" prefHeight="224.0" prefWidth="557.0">
+         <content>
+            <AnchorPane prefHeight="365.0" prefWidth="536.0">
+               <children>
+                  <VBox layoutX="65.0" prefHeight="365.0" prefWidth="407.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="65.0" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="You Must Fill Airplane Name" textAlignment="CENTER" wrappingWidth="340.947265625">
+                           <VBox.margin>
+                              <Insets left="25.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <JFXCheckBox fx:id="airplaneName" text="Update Airplane name">
+                           <VBox.margin>
+                              <Insets top="13.0" />
+                           </VBox.margin>
+                        </JFXCheckBox>
+                        <JFXTextField fx:id="airNameText" labelFloat="true" promptText="Airplane name" />
+                        <JFXCheckBox fx:id="flightNumber" layoutX="10.0" layoutY="23.0" text="Update Flight Number" />
+                        <JFXTextField fx:id="flightNumberText" labelFloat="true" layoutX="10.0" layoutY="40.0" promptText="Flight Number" />
+                        <JFXCheckBox fx:id="flightTime" layoutX="10.0" layoutY="23.0" text="Update Flight Time" />
+                        <JFXTextField fx:id="flightTimeText" labelFloat="true" layoutX="10.0" layoutY="40.0" promptText="Flight Time" />
+                        <JFXCheckBox fx:id="flightStatus" layoutX="10.0" layoutY="23.0" text="Update Flight Status" />
+                        <JFXTextField fx:id="flightStatusText" labelFloat="true" layoutX="10.0" layoutY="40.0" promptText="Flight Status" />
+                        <JFXCheckBox fx:id="flightName" layoutX="10.0" layoutY="23.0" text="Update Flight Name" />
+                        <JFXTextField fx:id="flightNameText" labelFloat="true" layoutX="10.0" layoutY="306.0" promptText="Update Flight Name">
+                           <VBox.margin>
+                              <Insets bottom="11.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <JFXCheckBox fx:id="date" layoutX="10.0" layoutY="390.0" text="Update Date" />
+                        <JFXTextField fx:id="dateText" labelFloat="true" layoutX="10.0" layoutY="427.0" promptText="Update Date" />
+                        <JFXCheckBox fx:id="country" layoutX="10.0" layoutY="483.0" text="Update Country" />
+                        <JFXTextField fx:id="countryText" labelFloat="true" layoutX="10.0" layoutY="520.0" promptText="Update Country" />
+                        <JFXButton buttonType="RAISED" onAction="#Exit" style="-fx-background-color: #cfd8dc;" text="SIGNOUT">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="250.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <opaqueInsets>
+                        <Insets right="4.0" />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets right="68.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

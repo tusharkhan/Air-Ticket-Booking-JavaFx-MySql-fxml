@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="seat_ticket_root" prefHeight="337.0" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SeatTicketAmount">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="614.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="76.0" layoutY="81.0" prefHeight="45.0" prefWidth="209.0" style="" text=" Per Seat Prize">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="19.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lebel1" alignment="CENTER" layoutX="349.0" layoutY="88.0" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: #E0E0E0;" text="\$700" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="161.0" prefHeight="45.0" prefWidth="171.0" text="Total Amount">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lebel2" alignment="CENTER" layoutX="349.0" layoutY="168.0" prefHeight="32.0" prefWidth="126.0" style="-fx-background-color: #E0E0E0;" text="\$2800">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Confirm_button" buttonType="RAISED" layoutX="354.0" layoutY="274.0" onAction="#confirm_method" prefHeight="45.0" prefWidth="126.0" style="-fx-background-color: #E0E0E0;" text="CONFIRM">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="Undo_button" buttonType="RAISED" layoutX="113.0" layoutY="273.0" onAction="#undo_method" prefHeight="45.0" prefWidth="126.0" style="-fx-background-color: #E0E0E0;" text="UNDO">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

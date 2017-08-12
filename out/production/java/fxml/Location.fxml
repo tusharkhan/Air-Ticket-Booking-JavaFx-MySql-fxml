@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Location_root" prefHeight="337.0" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Location">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="612.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/back.jpg" />
+         </image>
+      </ImageView>
+      <JFXComboBox fx:id="Current_location_combobox" focusColor="#08163f" layoutX="54.0" layoutY="57.0" prefHeight="40.0" prefWidth="181.0" promptText="    CURRENT LOCATION" style="-fx-background-color: #84ffff;" />
+      <Separator layoutX="298.0" layoutY="64.0" orientation="VERTICAL" prefHeight="181.0" prefWidth="8.0" />
+      <JFXButton fx:id="Done_button" buttonType="RAISED" layoutX="242.0" layoutY="268.0" onAction="#set_location_Method" prefHeight="46.0" prefWidth="116.0" style="-fx-background-color: #cfd8dc;" text="NEXT" textFill="#112504">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXButton>
+      <JFXComboBox fx:id="Destination_combobox" focusColor="#08163f" layoutX="368.0" layoutY="57.0" prefHeight="40.0" prefWidth="181.0" promptText="    DESTINATION" style="-fx-background-color: #84ffff;" />
+   </children>
+</AnchorPane>

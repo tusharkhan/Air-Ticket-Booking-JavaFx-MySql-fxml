@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="account_root" prefHeight="337.0" prefWidth="600" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Account_info">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="611.0" pickOnBounds="true">
+         <image>
+            <Image url="@../img/back.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="136.0" layoutY="24.0" prefHeight="62.0" prefWidth="329.0" text="Payment Method" underline="true">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Label>
+      <JFXComboBox fx:id="Combobox1" focusColor="BLACK" layoutX="189.0" layoutY="130.0" prefHeight="43.0" prefWidth="196.0" promptText="    Click Here" unFocusColor="BLACK" />
+      <JFXButton fx:id="Button1" buttonType="RAISED" layoutX="227.0" layoutY="270.0" onAction="#account_method" prefHeight="42.0" prefWidth="130.0" style="-fx-background-color: #e0e0e0;" text="NEXT">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
